@@ -1,0 +1,13 @@
+scripts:
+  start:
+    cmd: deno run src/main.ts
+    env:
+      DENO_ENV: development
+  watch:
+    cmd: denon --config .denonrc.json run cli.ts
+    log: info
+  test:
+    env:
+      DENO_ENV: test
+allow:
+  - net
