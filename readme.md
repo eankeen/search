@@ -19,3 +19,11 @@ After invoking, type in any string and it will loosely search all the packages f
 ### Grain
 
 For fine grained control, type 'grain'. Then type which parameter you want to search (ex. name). Then type the actual name.
+
+## Api
+
+We also export a `Search` object that is used internally
+
+```ts
+import { Search } from "https://raw.githubusercontent.com/eankeen/search/dev/cli.ts"
+```
