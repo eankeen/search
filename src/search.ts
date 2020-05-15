@@ -40,10 +40,10 @@ export class Search {
       }
 
 
-      if (query.name?.trim().toLocaleLowerCase() === pkg.name.trim().toLocaleLowerCase()) add(pkg)
-      if (query.repo?.trim().toLocaleLowerCase() === pkg.repo.trim().toLocaleLowerCase()) add(pkg)
-      if (query.type?.trim().toLocaleLowerCase() === pkg.type.trim().toLocaleLowerCase()) add(pkg)
-      if (query.owner?.trim().toLocaleLowerCase() === pkg.owner.trim().toLocaleLowerCase()) add(pkg)
+      if (query.name?.trim().toLocaleLowerCase() === pkg.name?.trim().toLocaleLowerCase()) add(pkg)
+      if (query.repo?.trim().toLocaleLowerCase() === pkg.repo?.trim().toLocaleLowerCase()) add(pkg)
+      if (query.type?.trim().toLocaleLowerCase() === pkg.type?.trim().toLocaleLowerCase()) add(pkg)
+      if (query.owner?.trim().toLocaleLowerCase() === pkg.owner?.trim().toLocaleLowerCase()) add(pkg)
       if (pkg.desc.includes(query.desc!)) add(pkg)
     }
 
