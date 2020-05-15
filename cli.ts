@@ -50,7 +50,9 @@ async function getInput(instatus: string = "--- search ---"): Promise<Array<Pack
   } else if (instatus === "--- grain ---") {
     if (new Set(["name", "owner", "repo", "type", "desc", "link"]).has(input.trim().toLocaleLowerCase())) {
       grainType = input
-      return await getInput("--- grain search ---")
+      await getInput("--- grain search ---")
+      tempturnoff = true
+      return
     }
 
 
@@ -89,7 +91,7 @@ async function getInput(instatus: string = "--- search ---"): Promise<Array<Pack
     p('repo', pkg.repo)
     p('type', pkg.type)
     p('desc', pkg.desc)
-    p('link', `https://${pkg.type}.com:${pkg.owner}/${pkg.repo}`)
+    p('link', `https://${pkg.type}.com/${pkg.owner}/${pkg.repo}`)
     printThis += "\n"
   }
 
