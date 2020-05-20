@@ -1,5 +1,7 @@
 # search
 
+![github ci](https://github.com/eankeen/config/workflows/Test%20CI/badge.svg?branch=master) ![github badge](https://img.shields.io/github/license/eankeen/is_exe) ![gitHub issues](https://img.shields.io/github/issues/eankeen/is_exe)
+
 Module that helps facilitate searching all the 3rd party packages. Also contains a command line interface to interact through these packages
 
 ## How to install
